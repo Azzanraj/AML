@@ -4,8 +4,5 @@
 __pycache__/
 *.pyc
 
-artifacts/*.npy
-artifacts/*.pkl
-artifacts/*.pt
-artifacts/*.pth
+
 "@ | Out-File -Encoding utf8 .gitignore
