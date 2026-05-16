@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AML Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <form method="post">
+        <h2>Login</h2>
+
+        <input name="username" placeholder="admin" required>
+        <input name="password" type="password" placeholder="admin123" required>
+
+        <button type="submit">Login</button>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </form>
+</div>
+
+</body>
+</html>

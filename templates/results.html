@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AML Predictions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Prediction Results</h2>
+
+    <p><b>Total Transactions:</b> {{ total }}</p>
+    <p><b>Flagged as Fraud:</b> {{ fraud_count }}</p>
+
+    <h3>Sample Predictions</h3>
+    {{ table | safe }}
+
+    <br>
+    <a href="/upload">Upload another file</a>
+</div>
+
+</body>
+</html>
